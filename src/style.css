@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+  padding-top: 55px;
+}
+
+/* Container */
+.container {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/* Header e Navegação */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #007bff;
+}
+
+/* Seções */
+section {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #777;
+  font-size: 0.8em;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Media Query para Tablets (Telas a partir de 601px) */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 601px) {
+
+  .container {
+    max-width: 768px;
+    padding: 25px;
+  }
+
+  body {
+    padding-top: 70px;
+  }
+
+  /* Navegação */
+  nav ul {
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  /* Seções */
+  section {
+    padding: 40px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+  }
+
+  section h2 {
+    margin-bottom: 20px;
+    border-bottom-width: 2px;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Media Query para Desktops (Telas a partir de 900px) */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 900px) {
+
+  .container {
+    max-width: 900px;
+    padding: 30px 0;
+  }
+
+  body {
+    padding-top: 80px;
+  }
+
+  /* Navegação */
+  header {
+    padding: 15px 0;
+  }
+
+  /* Seções */
+  section {
+    padding: 50px;
+  }
+
+  section h2 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  /* Rodapé */
+  footer {
+    padding: 25px;
+  }
+}
