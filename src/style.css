@@ -87,10 +87,66 @@ section li {
   line-height: 1.6;
 }
 
+/* Seção Portfólio */
+section#portfolio article {
+  margin-bottom: 40px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+section#portfolio article:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+section#portfolio h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+section#portfolio h3 a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+section#portfolio h3 a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+section#portfolio h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+section#portfolio p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+section#portfolio ul {
+  margin-bottom: 20px;
+}
+
 section#portfolio img {
-  width: 50%;
+  width: 100%;
+  max-width: 500px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section#portfolio img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Formulário de Contato */
@@ -158,6 +214,44 @@ section#portfolio img {
 .btn-submit:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+/* Mensagens de Erro e Sucesso */
+.input-error {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1) !important;
+}
+
+.error-message {
+  display: block;
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+  font-size: 0.95rem;
+  text-align: center;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Rodapé */
