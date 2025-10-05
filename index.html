@@ -24,26 +24,68 @@
 
     <section id="sobre-mim">
       <h2>Sobre mim</h2>
-      <p>Sobre mim: conteúdo...</p>
+      <p>Amante de música e extremamente curioso, sou uma pessoa que gosta de aprender coisas novas e resolver
+        problemas. Sou natural de São Paulo porém atualmente resido em São José/SC. Atualmente estou fazendo faculdade
+        de Engenharia de Software e fazendo cursos à parte.</p>
     </section>
 
     <section id="formacao">
       <h2>Formação</h2>
-      <p>Formação: conteúdo...</p>
+      <p>Graduando em Engenharia de Software, UNINTER (SC) | Set 2024 -</p>
+      <p>Graduado em Administração, FAPPES (SP) | Jan 2013 - Dez 2016</p>
+      <p></p>Técnico em Informática, Etec Heliópolis (SP) | Jan 2010 - Jul 2011</p>
     </section>
 
     <section id="portfolio">
       <h2>Portfólio</h2>
       <article>
-        <h3>Projeto X</h3>
-        <p>Detalhes do projeto...</p>
+        <h3><a href="https://github.com/itsduzao/password-generator" target="_blank">Password Generator</a></h3>
+        <p>Um gerador de senhas aleatórias com interface amigável e opções personalizáveis de caracteres.</p>
+        <h4>Tecnologias utilizadas</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Design Responsivo e acessível</li>
+        </ul>
+        <img src="./src/assets/img/password-generator-preview.png" />
       </article>
-      <p>Portfólio: conteúdo...</p>
+      <article>
+        <h3><a href="https://github.com/itsduzao/oldagram" target="_blank">Oldagram</a></h3>
+        <p>Uma web app no estilo Instagram, mas com toque vintage (anos 1900).
+          Publicações com design moderno e interações animadas, mantendo a essência de rede social
+          de fotos.</p>
+        <h4>Tecnologias utilizadas</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>WAI-ARIA</li>
+        </ul><img src="./src/assets/img/oldagram-preview.png" />
+      </article>
     </section>
 
     <section id="contato">
       <h2>Contato</h2>
-      <p>Contato: conteúdo...</p>
+      <form action="" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required
+            placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+      </form>
     </section>
 
   </main>

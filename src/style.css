@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +11,7 @@
 
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #333;
   background-color: #f8f8f8;
   padding-top: 55px;
@@ -70,6 +75,91 @@ section h2 {
   font-size: 1.5rem;
 }
 
+section ul,
+section ol {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+section#portfolio img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Formulário de Contato */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.btn-submit:active {
+  transform: translateY(1px);
+}
+
+.btn-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
 /* Rodapé */
 footer {
   text-align: center;
@@ -82,6 +172,9 @@ footer {
 /* Media Query para Tablets (Telas a partir de 601px) */
 /* -------------------------------------------------------------------------- */
 @media (min-width: 601px) {
+  html {
+    scroll-padding-top: 80px;
+  }
 
   .container {
     max-width: 768px;
